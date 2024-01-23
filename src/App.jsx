@@ -1,12 +1,11 @@
-
 import './App.css'
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
-      <h1>Dominion Homes & Properties Ltd</h1>
-      <p>Your Real Estate Platform</p>
+      <Home />
     </>
   )
 }
