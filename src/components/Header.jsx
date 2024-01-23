@@ -10,12 +10,12 @@ const Header = () => {
         <Navbar.Brand href="#">
           <img
             src={siteLogo}
-            className=" w-16 md:w-28"
+            className="w-12 md:w-20"
             alt="Dominion Homes & Properties Logo"
           />
         </Navbar.Brand>
         <div className="flex md:order-2">
-          <a href="+2349013284694">
+          <a href="tel:2349013284694">
             <MyButton title={"Call Us Now"} icon={<SlCallOut />} />
           </a>
           <Navbar.Toggle />
