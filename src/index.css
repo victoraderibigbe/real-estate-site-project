@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  h1 {
+    @apply text-4xl md:text-6xl font-bold;
+  }
+
+  p {
+    @apply text-lg md:text-xl
+  }
+
   .nav-link {
     @apply text-xl text-indigo-800 transition hover:underline hover:underline-offset-2;
   }
