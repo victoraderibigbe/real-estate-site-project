@@ -2,17 +2,20 @@ import { Navbar } from "flowbite-react";
 import siteLogo from "../assets/img/dominion-homes-logo.png";
 import MyButton from "./MyButton";
 import { SlCallOut } from "react-icons/sl";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="px-0 md:px-32">
       <Navbar fluid rounded>
-        <Navbar.Brand href="#">
-          <img
-            src={siteLogo}
-            className="w-12 md:w-20"
-            alt="Dominion Homes & Properties Logo"
-          />
+        <Navbar.Brand>
+          <Link to="/">
+            <img
+              src={siteLogo}
+              className="w-12 md:w-20"
+              alt="Dominion Homes & Properties Logo"
+            />
+          </Link>
         </Navbar.Brand>
         <div className="flex md:order-2">
           <a href="tel:2349013284694">
@@ -21,23 +24,23 @@ const Header = () => {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
-          <Navbar.Link className="nav-link active" href="#">
-            Home
+          <Navbar.Link className="nav-link active">
+            <Link to="/">Home</Link>
           </Navbar.Link>
-          <Navbar.Link className="nav-link" href="#">
-            About Us
+          <Navbar.Link className="nav-link">
+            <Link to="/about">About Us</Link>
           </Navbar.Link>
-          <Navbar.Link className="nav-link" href="#">
-            Our Services
+          <Navbar.Link className="nav-link">
+            <Link to="/services">Our Services</Link>
           </Navbar.Link>
-          <Navbar.Link className="nav-link" href="#">
-            Properties
+          <Navbar.Link className="nav-link">
+            <Link to="/properties">Properties</Link>
           </Navbar.Link>
-          <Navbar.Link className="nav-link" href="#">
-            Contact Us
+          <Navbar.Link className="nav-link">
+            <Link to="/contact">Contact Us</Link>
           </Navbar.Link>
-          <Navbar.Link className="nav-link" href="#">
-            FAQs
+          <Navbar.Link className="nav-link">
+            <Link to="/faqs">FAQs</Link>
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>

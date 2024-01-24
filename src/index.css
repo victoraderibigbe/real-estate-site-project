@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-    .nav-link {
-        @apply text-xl text-indigo-800 transition hover:underline hover:underline-offset-2;
-    }
+  .nav-link {
+    @apply text-xl text-indigo-800 transition hover:underline hover:underline-offset-2;
+  }
 }
 
 .nav-link {
-    color: #5A2B91;
-    transition: all;
+  color: #5a2b91;
+  transition: all;
 }
 
 .nav-link:hover {
-    color: #5A2B91 !important;
-    opacity: 80%;
+  color: #5a2b91 !important;
+  opacity: 80%;
 }
 
 .nav-link.active {
-    color: #F39190;
+  color: #f39190;
 }
