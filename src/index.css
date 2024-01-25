@@ -16,6 +16,21 @@
   }
 }
 
+.navbar-visible {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.navbar-hidden {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 0.3s;
+}
+
 .nav-link {
   color: #5a2b91;
   transition: all;
