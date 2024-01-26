@@ -8,14 +8,14 @@ const HomeMainSection = () => {
   return (
     <>
       {/* Why Choose Us Section */}
-      <div className="w-full px-10 my-10 md:px-72 section1">
+      <div className="w-full px-5 my-10 md:px-72 section1">
         <div className="mb-10 text-center">
           <h2>Why Choose Us?</h2>
           <p>Discover our potentials and why you should choose us</p>
         </div>
 
         {/* Cards for Why Choose Us Section */}
-        <div className="grid grid-cols-3 gap-5 md:gap-8">
+        <div className="grid grid-cols-3 gap-3 md:gap-8">
           <div className="col-span-3 md:col-span-1">
             <SectionCard
               title={"Trusted Experts"}

@@ -16,7 +16,7 @@
   }
 
   p {
-    @apply text-sm md:text-xl font-medium text-slate-700 leading-normal tracking-wide my-5;
+    @apply text-sm md:text-xl font-medium text-slate-700 leading-normal tracking-wide my-3 md:my-5;
   }
 
   .nav-link {
