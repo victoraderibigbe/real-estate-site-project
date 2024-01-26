@@ -14,6 +14,9 @@ export default {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
       },
+      height: {
+        'half': '50vh',
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

@@ -1,8 +1,20 @@
+import HeroSection from "../components/HeroSection";
+import heroBg from "../assets/img/hero-bg.jpg";
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <>
+      <HeroSection
+        backgroundImg={heroBg}
+        title={"What We Do"}
+        description={
+          "Tailored solutions for your real estate needs. Explore our services, designed to exceed expectations"
+        }
+        hasSearchbar={false}
+        fullScreen={false}
+      />
+    </>
+  );
+};
 
-export default Services
+export default Services;

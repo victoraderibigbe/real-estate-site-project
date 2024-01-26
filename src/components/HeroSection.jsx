@@ -1,22 +1,28 @@
 import React from "react";
-import heroBg from "../assets/img/hero-bg.jpg";
 import Searchbar from "./Searchbar";
 
-const HeroSection = () => {
+const HeroSection = ({
+  backgroundImg,
+  title,
+  description,
+  hasSearchbar,
+  fullScreen,
+}) => {
+  
   return (
-    <div className="relative h-screen">
+    <div className={`relative mt-10 ${fullScreen ? "h-screen" : "h-half"} `}>
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
         style={{
-          backgroundImage: `url(${heroBg})`,
+          backgroundImage: `url(${backgroundImg})`,
         }}
       ></div>
       <div className="absolute inset-0 bg-indigo-800 opacity-40"></div>
       <div className="absolute inset-0 flex items-center justify-center px-5 text-white md:px-0">
         <div className="text-center">
-          <h1 className="mb-4">Dominion Ocean Homes & Properties Ltd</h1>
-          <p className="text-white">Begin your journey towards land ownership today. Explore our listings or connect with our team to transform your vision into reality with us.</p>
-          <Searchbar />
+          <h1 className="mb-4">{title}</h1>
+          <p className="text-white">{description}</p>
+          {hasSearchbar && <Searchbar />}
         </div>
       </div>
     </div>

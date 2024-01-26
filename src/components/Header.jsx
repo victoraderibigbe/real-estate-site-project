@@ -1,9 +1,9 @@
 import { Navbar } from "flowbite-react";
 import siteLogo from "../assets/img/dominion-homes-logo.png";
 import MyButton from "./MyButton";
-import { SlCallOut } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0); // State to track the previous scroll position
@@ -45,8 +45,8 @@ const Header = () => {
           </Link>
         </Navbar.Brand>
         <div className="flex md:order-2">
-          <a href="tel:+2349013284694">
-            <MyButton title={"Call Us Now"} icon={<SlCallOut />} />
+          <a href="https://wa.me/+2349013284694?text=Hi! I'm interested in purchasing a landed property, my name is ...">
+            <MyButton title={"Chat Us"} icon={<FaWhatsapp />} />
           </a>
           <Navbar.Toggle />
         </div>
