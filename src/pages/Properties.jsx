@@ -1,5 +1,5 @@
 import HeroSection from "../components/HeroSection";
-import heroBg from "../assets/img/hero-bg.jpg";
+import heroBg from "../assets/img/property.jpg";
 
 const Properties = () => {
   return (
