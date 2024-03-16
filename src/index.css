@@ -19,8 +19,8 @@
     @apply text-sm md:text-xl font-medium text-slate-700 leading-normal tracking-wide my-3 md:my-5;
   }
 
-  .nav-link {
-    @apply text-sm md:text-xl text-indigo-800 transition hover:underline hover:underline-offset-2;
+  .navlink {
+    @apply text-sm md:text-xl transition hover:underline hover:underline-offset-2 hover:opacity-80;
   }
 }
 
@@ -39,16 +39,14 @@
   transition: top 0.3s;
 }
 
-.nav-link {
+.default-navlink {
   color: #5a2b91;
-  transition: all;
 }
 
-.nav-link:hover {
+.default-navlink:hover {
   color: #5a2b91 !important;
-  opacity: 80%;
 }
 
-.nav-link.active {
+.active-navlink {
   color: #f39190;
 }

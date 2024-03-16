@@ -1,7 +1,7 @@
 import { Navbar } from "flowbite-react";
 import siteLogo from "../assets/img/dominion-homes-logo.png";
 import MyButton from "./MyButton";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -36,13 +36,13 @@ const Header = () => {
     <div className={visible ? "navbar-visible" : "navbar-hidden"}>
       <Navbar fluid rounded>
         <Navbar.Brand>
-          <Link to="/">
+          <NavLink to="/">
             <img
               src={siteLogo}
               className="w-12 md:w-20"
               alt="Dominion Homes & Properties Logo"
             />
-          </Link>
+          </NavLink>
         </Navbar.Brand>
         <div className="flex md:order-2">
           <a href="https://wa.me/+2349013284694?text=Hi! I'm interested in purchasing a landed property, my name is ...">
@@ -51,23 +51,65 @@ const Header = () => {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
-          <Navbar.Link className="nav-link active">
-            <Link to="/">Home</Link>
+          <Navbar.Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "navlink active-navlink" : "navlink default-navlink"
+              }
+            >
+              Home
+            </NavLink>
           </Navbar.Link>
           <Navbar.Link className="nav-link">
-            <Link to="/about">About Us</Link>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "navlink active-navlink" : "navlink default-navlink"
+              }
+            >
+              About Us
+            </NavLink>
           </Navbar.Link>
-          <Navbar.Link className="nav-link">
-            <Link to="/services">Our Services</Link>
+          <Navbar.Link>
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive ? "navlink active-navlink" : "navlink default-navlink"
+              }
+            >
+              Our Services
+            </NavLink>
           </Navbar.Link>
-          <Navbar.Link className="nav-link">
-            <Link to="/properties">Properties</Link>
+          <Navbar.Link>
+            <NavLink
+              to="/properties"
+              className={({ isActive }) =>
+                isActive ? "navlink active-navlink" : "navlink default-navlink"
+              }
+            >
+              Properties
+            </NavLink>
           </Navbar.Link>
-          <Navbar.Link className="nav-link">
-            <Link to="/contact">Contact Us</Link>
+          <Navbar.Link>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "navlink active-navlink" : "navlink default-navlink"
+              }
+            >
+              Contact Us
+            </NavLink>
           </Navbar.Link>
-          <Navbar.Link className="nav-link">
-            <Link to="/faqs">FAQs</Link>
+          <Navbar.Link>
+            <NavLink
+              to="/faqs"
+              className={({ isActive }) =>
+                isActive ? "navlink active-navlink" : "navlink default-navlink"
+              }
+            >
+              FAQs
+            </NavLink>
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
