@@ -1,7 +1,7 @@
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/home/HeroSection";
 import heroBg from "../assets/img/hero-bg.jpg";
-import FeaturedProperties from "../components/FeaturedProperties";
-import WhyChooseUs from "../components/WhyChooseUs";
+import FeaturedProperties from "../components/home/FeaturedProperties";
+import WhyChooseUs from "../components/home/WhyChooseUs";
 
 const Home = () => {
   return (

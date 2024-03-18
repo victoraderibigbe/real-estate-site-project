@@ -1,4 +1,4 @@
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/home/HeroSection";
 import heroBg from "../assets/img/services-img.jpg";
 
 const Services = () => {

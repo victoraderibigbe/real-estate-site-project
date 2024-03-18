@@ -1,4 +1,4 @@
-import HeroSection from "../components/HeroSection"
+import HeroSection from "../components/home/HeroSection";
 import heroBg from "../assets/img/hero-bg.jpg";
 
 const AboutUs = () => {
@@ -7,12 +7,14 @@ const AboutUs = () => {
       <HeroSection
         backgroundImg={heroBg}
         title={"About Us"}
-        description={"Discover our story. Rooted in expertise, committed to your dreams. Learn more about Dominion Homes and Properties."}
+        description={
+          "Discover our story. Rooted in expertise, committed to your dreams. Learn more about Dominion Homes and Properties."
+        }
         hasSearchbar={false}
         fullScreen={false}
       />
     </>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;
