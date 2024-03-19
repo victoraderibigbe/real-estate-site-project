@@ -2,6 +2,7 @@ import HeroSection from "../components/home/HeroSection";
 import heroBg from "../assets/img/hero-bg.jpg";
 import FeaturedProperties from "../components/home/FeaturedProperties";
 import WhyChooseUs from "../components/home/WhyChooseUs";
+import AboutUs from "../components/home/AboutUs";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       />
       <WhyChooseUs />
       <FeaturedProperties />
+      <AboutUs />
     </>
   );
 };

@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        dominionpurple: "#5A2B91",
-        dominionpink: "#F39190",
+        primarycolor: "#5A2B91",
+        secondarycolor: "#F39190",
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
